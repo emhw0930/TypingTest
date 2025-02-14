@@ -11,8 +11,8 @@ body {
 
 /* Centered Container */
 .container {
-    width: 1000px; /* Fixed width */
-    min-height: 650px; /* Minimum height to ensure enough space */
+    width: 80%; /* Fixed width */
+    min-height: 80%; /* Minimum height to ensure enough space */
     padding: 20px;
     background: white;
     border-radius: 10px;
