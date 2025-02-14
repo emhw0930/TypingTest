@@ -1,0 +1,83 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centered Container */
+.container {
+    width: 1000px; /* Fixed width */
+    min-height: 650px; /* Minimum height to ensure enough space */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+}
+
+
+/* Headings */
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: 'Courier New';
+}
+
+/* Results Text */
+p {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+/* Result Values */
+span {
+    font-weight: bold;
+    color: #007bff; /* Blue color for emphasis */
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+textarea {
+    width: 90%; /* Full width of the container */
+    height: 200px; /* Increased height */
+    font-size: 20px; /* Bigger text */
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Prevent manual resizing */
+    outline: none; /* Removes default blue outline on focus */
+}
+
+
+
+.stats {
+    margin-top: 20px;
+    padding: 15px;
+    width: 400px;
+    border-radius: 2px; /* Rounded corners */
+    display: inline-block; /* Keeps it centered */
+}

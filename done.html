@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test - Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Test Completed!</h1>
+        <p><strong>Time Taken:</strong> <span id="final-time"></span> seconds</p>
+        <p><strong>Words Per Minute (WPM):</strong> <span id="final-wpm"></span></p>
+        <p><strong>Accuracy:</strong> <span id="final-accuracy"></span>%</p>
+        <button onclick="restartTest()">Try Again</button>
+    </div>
+    <script>
+        document.getElementById("final-time").textContent = localStorage.getItem("time") || 0;
+        document.getElementById("final-wpm").textContent = localStorage.getItem("wpm") || 0;
+        document.getElementById("final-accuracy").textContent = localStorage.getItem("accuracy") || "100";
+
+        function restartTest() {
+            window.location.href = "index.html"; // Go back to the test page
+        }
+    </script>
+</body>
+</html>
